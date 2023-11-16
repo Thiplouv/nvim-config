@@ -17,6 +17,13 @@ vim.opt.textwidth = 79;
 -- Color the column after textwidth
 vim.opt.colorcolumn = '+1';
 
+-- Enables Dark Background
+vim.opt.background = 'dark'
+vim.opt.termguicolors = true
+
+-- Enables System Clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- No swap files
 vim.opt.swapfile = false;
 
