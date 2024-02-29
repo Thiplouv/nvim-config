@@ -15,7 +15,7 @@ return {
     
     require("nvim-tree").setup ({
         view = {
-            width = 30,
+            width = 25,
             relativenumber = false,
         },
         -- change folder arrow icons
@@ -31,6 +31,9 @@ return {
                     },
                 },
             },
+        },
+        git = {
+            ignore = false,
         },
     })
 
