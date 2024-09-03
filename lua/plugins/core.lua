@@ -8,4 +8,10 @@ return {
 
   -- disable trouble
   { "akinsho/bufferline.nvim", enabled = false },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      autoformat = false,
+    },
+  },
 }
