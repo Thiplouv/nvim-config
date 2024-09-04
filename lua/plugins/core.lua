@@ -12,6 +12,15 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       autoformat = false,
+      servers = {
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+            },
+          },
+        },
+      },
     },
   },
 }
