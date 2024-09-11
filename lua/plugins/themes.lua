@@ -1,20 +1,32 @@
--- return {
---   "oxfist/night-owl.nvim",
---   lazy = false, -- make sure we load this during startup if it is your main colorscheme
---   priority = 1000, -- make sure to load this before all the other start plugins
--- }
-
 return {
-  "projekt0n/github-nvim-theme",
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
-  priority = 1000, -- make sure to load this before all the other start plugins
-  config = function()
-    require("github-theme").setup({
-      options = {
-        transparent = true,
-      },
-    })
 
-    vim.cmd("colorscheme github_dark_high_contrast")
-  end,
+  -- Adds Night Owl theme
+  -- {
+  --   "oxfist/night-owl.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- }
+
+  -- Adds Github theme
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("github-theme").setup({
+        options = {
+          transparent = true,
+        },
+      })
+    end,
+  },
+
+  -- Loads theme in LazyVim
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "night-owl",
+      colorscheme = "github_dark_high_contrast",
+    },
+  },
 }
