@@ -14,7 +14,7 @@ opt.foldenable = false
 
 -- Scrolling
 opt.number = true
-opt.relativenumber = false
+opt.relativenumber = true
 opt.scrolloff = 8
 opt.linebreak = true
 
