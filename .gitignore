@@ -1,0 +1,2 @@
+# Excludes all json files created by LazyVim
+*.json
