@@ -4,6 +4,7 @@ return {
     opts = {
       autoformat = false,
       servers = {
+        asm_lsp = {},
         bashls = {},
         clangd = {},
         cmake = {},
