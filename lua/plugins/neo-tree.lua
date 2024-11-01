@@ -9,6 +9,9 @@ return {
           always_show = { -- remains visible even if other settings would normally hide it
             ".gitignore",
           },
+          always_show_by_pattern = { -- uses glob style patterns
+            "main.*"
+          },
           never_show = {
             ".DS_Store",
             ".git",
