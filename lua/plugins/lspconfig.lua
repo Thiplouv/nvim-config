@@ -14,7 +14,7 @@ return {
         gopls = {},
         html = {},
         jdtls = {},
-        tsserver = {},
+        ts_ls = {},
         jsonls = {},
         texlab = {},
         lua_ls = {},
