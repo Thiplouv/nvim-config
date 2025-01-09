@@ -19,6 +19,8 @@ return {
             "__pycache__",
             ".bundle",
             "vendor",
+            ".cache",
+            "compile_commands.json",
           },
           hide_by_pattern = {
             "*.o",
