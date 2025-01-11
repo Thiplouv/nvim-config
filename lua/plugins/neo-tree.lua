@@ -2,10 +2,11 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+      use_libuv_file_watcher = true,
       filesystem = {
         filtered_items = {
           hide_dotfiles = false,
-          hide_gitignored = false,
+          hide_gitignored = true,
           hide_by_name = {
             ".DS_Store",
             ".git",
@@ -41,6 +42,11 @@ return {
             "*.log",
             "*.gem",
             "*.rbc",
+          },
+          always_show_by_pattern = { -- uses glob style patterns
+            "*.c",
+            "*.h",
+            "*.env",
           },
         },
       },
