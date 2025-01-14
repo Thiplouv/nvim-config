@@ -1,7 +1,11 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
     opts = {
+      hide_root_node = false,
+      retain_hidden_root_indent = true,
+      enable_refresh_on_write = false,
       use_libuv_file_watcher = true,
       filesystem = {
         filtered_items = {

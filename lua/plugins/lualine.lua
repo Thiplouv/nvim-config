@@ -5,10 +5,10 @@ return {
     "nvim-lualine/lualine.nvim",
     opts = {
       options = {
-        component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
-
+        component_separators = { left = "", right = "" },
         globalstatus = false,
+        disabled_filetypes = { "neo-tree" },
       },
       sections = {
         lualine_a = { "mode" },
@@ -52,6 +52,7 @@ return {
           { "location", padding = { left = 0, right = 1 } },
         },
       },
+      extensions = { "lazy", "fzf" },
     },
   },
 }
