@@ -5,6 +5,7 @@ return {
       autoformat = false,
       servers = {
         asm_lsp = {},
+        astro = {},
         bashls = {},
         clangd = {},
         cmake = {},
