@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     -- ONLY NON LSP HERE (Formatters, linters...)
     opts = {
       ensure_installed = {
